@@ -50,13 +50,15 @@ AL seleccionar el botón de la parte1 se aparece una vista que nos da la posibil
 
 Tenemos diferentes respuestas para diversas situaciones:
 
-1. Si se hace clic en el botón "Upload" pero no se ha seleccionado ningún archivo para subir, se mostrará el mensaje "No file provided in the request".
+1. Si se hace clic en el botón "Upload" pero no se ha seleccionado ningún archivo para subir.
+   Se mostrará el mensaje "No file provided in the request".
 ![6](https://github.com/yadelisgv/Globant-Challenge-Flask-Python-SQLITE/assets/40398052/574f9add-1859-4b6f-baa3-6aae2647e243)
 
-2. Si se selecciona un archivo incorrecto, se mostrará el mensaje "Invalid table name provided".
+3. Si se selecciona un archivo incorrecto,se mostrará el mensaje "Invalid table name provided".
 ![7](https://github.com/yadelisgv/Globant-Challenge-Flask-Python-SQLITE/assets/40398052/ab09323f-3311-48f5-ace0-b241fb6520bb)
 
-3. Si se selecciona correctamente el archivo y se logra cargar en la base de datos, se mostrará el mensaje "Data uploaded to <nombre_de_la_tabla> successfully".
+4. Si se selecciona correctamente el archivo y se logra cargar en la base de datos.
+   Se mostrará el mensaje "Data uploaded to <nombre_de_la_tabla> successfully".
 ![5](https://github.com/yadelisgv/Globant-Challenge-Flask-Python-SQLITE/assets/40398052/bc35f5cd-496e-4dc6-a323-e12c0bd3b3ce)
 
 Luego de cargada la data se puede retornar a la página de inicio y seleccionar la parte2 del desafío que nos llevará a la siguiente vista:
