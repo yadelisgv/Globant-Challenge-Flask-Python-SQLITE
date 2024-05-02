@@ -3,39 +3,39 @@ Globant’s Data Engineering Coding Challenge
 Este proyecto resuelve el desafío de codificación de Ingeniería de Datos de Globant. Consiste en una aplicación Flask que maneja la migración de datos desde archivos CSV a una base de datos SQLite y proporciona métricas específicas sobre los datos migrados.
 
 **Tecnologías Utilizadas**
-Python
-Flask
-SQLite
-Pandas
-HTML/CSS
-Docker
+- Python
+- Flask
+- SQLite
+- Pandas
+- HTML/CSS
+- Docker
 
 **Estructura del Proyecto**
-app.py: Archivo principal que inicia la aplicación Flask y maneja las rutas.
-controller_db.py: Contiene los métodos para la creación de tablas en la base de datos y la inserción de datos desde archivos CSV.
-templates/: Carpeta que contiene los archivos HTML para las vistas.
-static/: Carpeta que contiene archivos estáticos como CSS.
-files_csv/: Carpeta que contiene los archivos CSV necesarios para la migración de datos.
-requirements.txt: Archivo que lista las dependencias del proyecto.
+- app.py: Archivo principal que inicia la aplicación Flask y maneja las rutas.
+- controller_db.py: Contiene los métodos para la creación de tablas en la base de datos y la inserción de datos desde archivos CSV.
+- templates/: Carpeta que contiene los archivos HTML para las vistas.
+- static/: Carpeta que contiene archivos estáticos como CSS.
+- files_csv/: Carpeta que contiene los archivos CSV necesarios para la migración de datos.
+- requirements.txt: Archivo que lista las dependencias del proyecto.
 
 **Características del Desafío ( está compuesto de 2 partes):**
-Section 1: API
-Se busca construir una API desde la cual se puedan cargar y migrar a una base de datos los datos contenidos en archivos CSV. Archivos CSV: 'departments', 'jobs' y 'hired_employees'. Se deben cumplir algunos requisitos: Ser capaz de insertar transacciones por lotes (de 1 a 1000 filas) con una sola solicitud y la base de datos debe ser SQL.
-Section 2: SQL
-Se quieren obtener algunas métricas de recursos humanos como empleados contratados por trimestre y departamentos con altas contrataciones.
+- Section 1: API
+- Se busca construir una API desde la cual se puedan cargar y migrar a una base de datos los datos contenidos en archivos CSV. Archivos CSV: 'departments', 'jobs' y 'hired_employees'. Se deben cumplir algunos requisitos: Ser capaz de insertar transacciones por lotes (de 1 a 1000 filas) con una sola solicitud y la base de datos debe ser SQL.
+- Section 2: SQL
+- Se quieren obtener algunas métricas de recursos humanos como empleados contratados por trimestre y departamentos con altas contrataciones.
 
 **Configuración mediante Docker:**
-Navegue hasta el directorio raíz.
-Construya y ejecute la imagen Docker:
-docker --build -t flask-app
-docker run -p 7000:5000 flask-app
+- Navegue hasta el directorio raíz.
+- Construya y ejecute la imagen Docker:
+- docker --build -t flask-app
+- docker run -p 7000:5000 flask-app
 
 **Configuración manual:**
-Navegue hasta el directorio raíz
-Instale todas las bibliotecas en el requirements.txt
-Navega al directorio /app/
-Ejecuta app.py
-La aplicación estará disponible en http://localhost:7000
+- Navegue hasta el directorio raíz
+- Instale todas las bibliotecas en el requirements.txt
+- Navega al directorio /app/
+- Ejecuta app.py
+- La aplicación estará disponible en http://localhost:7000
 
 **Uso de la API**
 La aplicación inicia presentando el desafío, con la siguiente vista:
