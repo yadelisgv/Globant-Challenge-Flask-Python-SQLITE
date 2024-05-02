@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globant’s Challenge</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+    <!--GOOGLE FONTS LOBSTER-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--MAIN CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2 class="display-3 text-center title mt-3">Globant’s Challenge</h2>
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Section 1: API</h5>
+                        <pre class="card-text">
+                            In the context of a DB migration with 3 different tables (departments, jobs, employees) , create
+                            a local REST API that must:
+                            1. Receive historical data from CSV files
+                            2. Upload these files to the new DB
+                            3. Be able to insert batch transactions (1 up to 1000 rows) with one request
+                            
+                            Clarifications
+                            ● You decide the origin where the CSV files are located.
+                            ● You decide the destination database type, but it must be a SQL database.
+                            ● The CSV file is comma separated.
+                        </pre>
+                        <div class="text-center">
+                            <a href="{{ url_for('part1') }}" class="btn btn-primary">Part 1</a>
+                        </div>
+                        <br>
+                        <h5 class="card-title">Section 2: SQL</h5>
+                        <pre class="card-text">
+                                You need to explore the data that was inserted in the previous section. The stakeholders ask
+                                for some specific metrics they need. You should create an end-point for each requirement.
+                        </pre>
+                        <div class="text-center">
+                            <a href="{{ url_for('part2') }}" class="btn btn-primary">Part 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
